@@ -1,0 +1,366 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "AventurasEmFaled",
+        "abbreviation": "AeF",
+        "full": "AeF",
+        "authors": [
+          "Gustavo Bacelar"
+        ],
+        "version": "1.0.0",
+        "color": "0f8a0d"
+      }
+    ]
+  },
+  "race": [
+    {
+      "name": "Geodon",
+      "source": "AeF",
+      "page": "",
+      "age": {
+        "mature": 1,
+        "max": 80
+      },
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "ability": [
+        {
+          "con": 2
+        }
+      ],
+      "size": "M",
+      "speed": 30,
+      "additionalSpells": [
+        {
+          "known": {
+            "1": [
+              "light#c"
+            ]
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "terran": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Mana Constitution",
+          "entries": [
+            "Geodons can choose to use Constitution as their Spell Casting Ability instead of their default stat."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Interior Light",
+          "entries": [
+            "You know the {@spell light} cantrip, but it can only be casted on you."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "Geodons live an average of 80 years when away from sources of mana. The mana inside you will slowly dissipate throughout your life. They are already considered adults when they are born."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Neer",
+      "source": "AeF",
+      "page": "",
+      "age": {
+        "mature": 50,
+        "max": 700
+      },
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "ability": [
+        {
+          "cha": 2
+        }
+      ],
+      "size": "M",
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "languageProficiencies": [
+        {
+          "common": true,
+          "aquan": true
+        }
+      ],
+      "traitTags": [
+				"Amphibious"
+			],
+      "resist": [
+        "cold"
+      ],
+      "vulnerable": [
+        "fire"
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Life in the Water",
+          "entries": [
+            "Its normal displacement is 30ft. out of the water. His swimming displacement is 30ft. You ignore the negative effects caused by being underwater or in the depths."
+          ]
+        },
+        {
+					"type": "entries",
+					"name": "Amphibious",
+					"entries": [
+						"You can breathe air and water."
+					]
+				},
+        {
+          "type": "entries",
+          "name": "Damp skin",
+          "entries": [
+            "When out of water, a Neer has a weakness to fire damage. If you take a long rest and don't have contact with abundant water, nor can you drink at least 1L of water before bed, you don't recover hit dice. If you take a short rest underwater, you regain twice your health when you spend a hit die."
+          ],
+          "foundryImg": "icons/magic/sonic/explosion-impact-shock-wave.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Cold Knowledge",
+          "entries": [
+            "You have resistance to cold damage and ignore a target's resistance when dealing cold damage."
+          ]
+        }
+      ],
+      "hasFluff": true,
+			"hasFluffImages": true
+    }
+  ],
+  "subrace": [
+    {
+      "name": "Ruby",
+      "raceName": "Geodon",
+      "raceSource": "AeF",
+      "source": "AeF",
+      "ability": [
+        {
+          "int": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Mana Shield",
+          "entries": [
+            "Whenever a Geodon spends a spell slot to cast a spell, it receives twice the amount of the spell slot spent in Temporary Hit Points."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sapphire",
+      "raceName": "Geodon",
+      "raceSource": "AeF",
+      "source": "AeF",
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Mana Affinity",
+          "entries": [
+            "Once per long rest, Sapphire Geodons can spend hit dice to recover a spell slot. The number of hit dice spent this way is the number of the spell slot recovered."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Emerald",
+      "raceName": "Geodon",
+      "raceSource": "AeF",
+      "source": "AeF",
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex",
+              "cha"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Vitality Surge",
+          "entries": [
+            "Once per long rest, Emerald Geodons can spend hit dice to recover life. The maximum number of Hit Dice that can be spent this way is equal to your proficiency bonus."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Golden",
+      "raceName": "Geodon",
+      "raceSource": "AeF",
+      "source": "AeF",
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex",
+              "cha"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "any": 2
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Skilled",
+          "entries": [
+            "Gold Geodons can choose to be proficient in any two skills."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Silver",
+      "raceName": "Geodon",
+      "raceSource": "AeF",
+      "source": "AeF",
+      "feats": [
+        {
+          "any": 1
+        }
+      ],
+      "entries": [
+        {
+          "name": "Feat",
+          "entries": [
+            "You gain one {@5etools feat|feats.html} of your choice."
+          ],
+          "type": "entries"
+        }
+      ]
+    },
+    {
+      "name": "Aerodor",
+      "raceName": "Neer",
+      "raceSource": "AeF",
+      "source": "AeF",
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "wis",
+              "dex",
+              "int"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "any": 1
+        }
+      ],
+      "entries": [
+        {
+          "name": "Born Artist",
+          "entries": [
+            "You have expertise in a musical instrument or craftsman's tool of your choice and have advantage on checks you make using your chosen option."
+          ],
+          "type": "entries"
+        }
+      ]
+    },
+    {
+      "name": "Shandrania",
+      "raceName": "Neer",
+      "raceSource": "AeF",
+      "source": "AeF",
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "dex",
+              "con",
+              "int"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "entries": [
+        {
+          "name": "Born Survivor",
+          "entries": [
+            "The Neers of Shandrania were able to adapt so as not to suffer the ills of not being in constant contact with water described in Life in the water."
+          ],
+          "type": "entries"
+        }
+      ]
+    },
+    {
+      "name": "Restless Seas",
+      "raceName": "Neer",
+      "raceSource": "AeF",
+      "source": "AeF",
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "wis",
+              "con",
+              "int"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "deep speech": true,
+          "common": true,
+          "aquan": true
+        }
+      ],
+      "entries": [
+        {
+          "name": "Call of the Depths.",
+          "entries": [
+            "As a Neer of the Restless Seas, you can speak Deep Speech, and through gestures and sounds, you are able to understand and pass simple information to aquatic animals."
+          ],
+          "type": "entries"
+        }
+      ]
+    }
+  ]
+}
