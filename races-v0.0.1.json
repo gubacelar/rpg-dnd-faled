@@ -140,6 +140,80 @@
       ],
       "hasFluff": true,
 			"hasFluffImages": true
+    },
+    {
+      "name": "Arvoroso",
+      "source": "AeF",
+      "page": "",
+      "age": {
+        "mature": 20,
+        "max": 1000
+      },
+      "creatureTypes": [
+        "humanoid"
+      ],
+      "ability": [
+        {
+          "wis": 2
+        }
+      ],
+      "size": "M",
+      "speed": {
+        "walk": 30
+      },
+      "languageProficiencies": [
+        {
+          "common": true,
+          "sylvan": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Forest Pass",
+          "entries": [
+            "Whenever you are in a forest, any difficult terrain is considered normal for you and you have advantage on Stealth checks."
+          ]
+        },
+        {
+					"type": "entries",
+					"name": "Natural Knowledge",
+					"entries": [
+						"You are proficient in Nature, History, and Insight checks."
+					]
+				},
+        {
+          "type": "entries",
+          "name": "Powerful Build",
+          "entries": [
+            "You count as a size a more when determining your carrying capacity and the weight you can push, drag or lift."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Cold Knowledge",
+          "entries": [
+            "You are able to sleep normally like humans do, but if you have fresh soil and some water to 'plant' your feet by submerging them, then you can relax. During this time you stay semiconscious in a trance state for 4 hours. Later from resting this way, you get the same benefit that a human gets from 8 hours of sleep."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Planted",
+          "entries": [
+            "As long you remains motionless, he is indistinguishable from a common plant of its kind."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Protection Sphere",
+          "entries": [
+            "You can use a reaction and spend as many hit dices as you want to expand your branches and create a sphere of branches and leaves. This sphere possess 5ft radius and 10 AC, with a total of hit points equal to your Constitution value multiplied by the number of hit dices spent this way. Once this skill has been used, it cannot be used again until you complete a long rest. The sphere absorbs all damage that would be destined for the creatures that are inside the sphere and once the sphere reaches 0 hit points it is undone and the excess damage goes to you. While the sphere is active you has 0 movement. You can undo the sphere at any time as a free action."
+          ]
+        }
+
+      ],
+      "hasFluff": true,
+			"hasFluffImages": true
     }
   ],
   "subrace": [
@@ -357,6 +431,33 @@
           "name": "Call of the Depths.",
           "entries": [
             "As a Neer of the Restless Seas, you can speak Deep Speech, and through gestures and sounds, you are able to understand and pass simple information to aquatic animals."
+          ],
+          "type": "entries"
+        }
+      ]
+    },
+    {
+      "name": "Coconut Tree",
+      "raceName": "Arvoroso",
+      "raceSource": "AeF",
+      "source": "AeF",
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "cha",
+              "con",
+              "dex"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "entries": [
+        {
+          "name": "Coconut Water",
+          "entries": [
+            "Once per short rest, you are able to create {@dice 1d6} coconuts. This coconut heals {@dice 1d4} + your Wisdom modifier when consumed, and gives the creature that consumes it fire resistance for 1 hour. The healing of this ability increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
           ],
           "type": "entries"
         }
